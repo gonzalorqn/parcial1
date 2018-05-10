@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1525963889 source:d:\parcial1\productos.c
+	<stdio.h>
+	"Productos.h"
+	<string.h>
+
+1525963705 d:\parcial1\productos.h
+
+1525960321 source:d:\parcial1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Usuarios.h"
+
+1525963521 d:\parcial1\usuarios.h
+	"Productos.h"
+
+1525964271 source:d:\parcial1\usuarios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"usuarios.h"
+
