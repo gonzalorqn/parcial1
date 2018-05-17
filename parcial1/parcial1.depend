@@ -20,3 +20,18 @@
 	<string.h>
 	"usuarios.h"
 
+1525950396 source:c:\users\gonzalo\desktop\parcial1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Usuarios.h"
+
+1526429146 c:\users\gonzalo\desktop\parcial1\usuarios.h
+	"Productos.h"
+
+1525950396 c:\users\gonzalo\desktop\parcial1\productos.h
+
+1525950396 source:c:\users\gonzalo\desktop\parcial1\productos.c
+	<stdio.h>
+	"Productos.h"
+	<string.h>
+

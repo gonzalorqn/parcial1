@@ -22,7 +22,7 @@ int eProp_baja(ePropietario propietarios[],eAutomoviles automoviles[],int limite
 void eProp_mostrarUno(ePropietario propietarios);
 void eProp_mostrar(ePropietario propietarios[], int cant);
 int eAuto_alta(eAutomoviles automoviles[], ePropietario propietarios[],int limiteAuto, int limiteProp);
-int eAuto_calcularEstadia(eAutomoviles automoviles[],ePropietario propietarios[],int limiteAuto,int limiteProp,int cual,int horas);
+int eAuto_calcularEstadia(eAutomoviles automoviles[],int cual,int horas);
 
 int eAuto_modificacion(eAutomoviles automoviles[],ePropietario propietarios[],int limiteAuto,int limiteProp);
 void eProp_mostrarUsuarioConSusautomoviles(eAutomoviles automoviles[], int limiteAuto, ePropietario propietarios[], int limiteProp,int idUsu);

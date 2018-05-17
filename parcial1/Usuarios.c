@@ -393,7 +393,7 @@ int eAuto_baja(eAutomoviles automoviles[],ePropietario propietarios[],int limite
             retorno = 0;
             automoviles[indice].estado = 0;
             horas = eAuto_devolverHorasEstadia();
-            estadia = eAuto_calcularEstadia(automoviles,propietarios,limiteAuto,limiteProp,id,horas);
+            estadia = eAuto_calcularEstadia(automoviles,indice,horas);
             printf("Horas: %d \n", horas);
             printf("Estadia: %d \n", estadia);
 
@@ -404,31 +404,30 @@ int eAuto_baja(eAutomoviles automoviles[],ePropietario propietarios[],int limite
     return retorno;
 }
 
-int eAuto_calcularEstadia(eAutomoviles automoviles[],ePropietario propietarios[],int limiteAuto,int limiteProp,int cual,int horas)
+int eAuto_calcularEstadia(eAutomoviles automoviles[],int cual,int horas)
 {
     int estadia = -1;
-    eAuto_listarAutomoviles(automoviles,limiteAuto,propietarios,limiteProp);
 
     if(automoviles != NULL)
     {
         estadia = 0;
         printf("%d \n", automoviles[cual].marca);
-        /*if(strcmp(automoviles[cual].marca, "ALPHA_ROMEO")== 0)
+        if(automoviles[cual].marca == 1)
         {
             estadia = horas * 150;
         }
-        else if(strcmp(automoviles[cual].marca, "FERRARI")== 0)
+        else if(automoviles[cual].marca == 2)
         {
             estadia = horas * 175;
         }
-        else if(strcmp(automoviles[cual].marca, "AUDI")== 0)
+        else if(automoviles[cual].marca == 3)
         {
             estadia = horas * 200;
         }
-        else if(strcmp(automoviles[cual].marca, "OTRO") == 0)
+        else if(automoviles[cual].marca == 4)
         {
             estadia = horas * 250;
-        }*/
+        }
     }
     return estadia;
 }
